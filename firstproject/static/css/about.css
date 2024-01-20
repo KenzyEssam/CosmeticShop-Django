@@ -1,0 +1,342 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+section{
+    padding:3rem 9%;
+}
+span{
+    color:#F08080;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:1rem;
+    padding:1rem 3rem;
+    color:#222;
+    font-size:1.7rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.7);
+    cursor: pointer;
+}
+.btn:hover{
+    letter-spacing: .2rem;
+    background: #F08080;
+    color: #fff;
+}
+
+.header{
+    background:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 9%;
+}
+.header .logo{
+    font-size: 2.5rem;
+    color: #222;
+    font-weight: bolder;
+}
+.header .logo i{
+    color: #F08080;
+}
+.header .navbar a{
+    margin: 0 1.5rem;
+    font-size: 1.7rem;
+    color: #222;
+}
+.header .navbar a:hover{
+    color: #F08080;
+}
+.header .icons a{
+    height: 4.5rem;
+    width:4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    font-size: 1.7rem;
+    color: #222;
+    margin-left: .3rem;
+    text-align: center;
+    cursor: pointer;
+}
+.header .icons a:hover{
+    background: #F08080;
+    color: #fff;
+}
+
+
+
+.about-header {
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    padding: 150px !important;
+   
+  }
+  
+  .about-header .content {
+    width: 55rem;
+    padding: 3rem;
+    background: #eee;
+
+  }
+  
+  .about-header .content span {
+    color: #F08080;
+    font-size: 2rem;
+  }
+  
+  .about-header .content h3 {
+    padding-top: 1rem;
+    font-size: 3rem;
+    color: #222;
+  }
+  
+  .about-header .content p {
+    font-size: 1.5rem;
+    color: #777;
+    line-height: 2;
+    padding: 1rem 0;
+  }
+
+  
+
+.about-us {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+.about-us .img{
+    padding-bottom: 5rem;
+    padding-right: 5rem;
+}
+.about-us .img img{
+    width: 100%;
+    box-shadow: 4rem 4rem 0 #eee;
+}
+.about-us .content{
+    width: 55%;
+    margin-left: 20px;
+}
+.about-us .content .box{
+    padding: 3rem;
+    background: #eee;
+    margin-left: 23px;
+}
+.about-us .content .box h3{
+    font-size:4rem;
+    color: #222;
+}
+.about-us .content .box h3 span{
+  font-size:4rem;
+  color: #F08080;
+  font-size: 3rem;
+}
+.about-us .content .box p{
+    padding: 1rem 0;
+    line-height: 2;
+    color: #666;
+    font-size:1.4rem;
+}
+.about-us .content .icons-container{
+    display: flex;
+    margin-top: 2rem;
+    text-align: center;
+}
+.about-us .content .icons-container .icons{
+    background: #eee;
+    padding:2rem;
+    text-align: center;
+    margin-left: 2rem;
+    width: 35rem;
+}
+.about-us .content .icons-container .icons i{
+    color: #F08080;
+    margin-bottom: 1rem;
+    font-size: 5rem;
+}
+.about-us .content .icons-container .icons p{
+    font-size:1.4rem;
+    color: #666;
+}
+
+.about-us .content .icons-container .icons:hover {
+    background-color: #F08080;
+}
+.about-us .content .icons-container .icons:hover i{
+color: white;}
+.about-us .content .icons-container .icons:hover p{
+color: white;}
+
+
+
+
+
+.team-heading {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 4rem;
+  }
+  
+  .team-heading h1 {
+    font-size: 3.5rem;
+    color: #222;
+  }
+  
+  .team-heading p {
+    margin: 1rem auto;
+    font-size: 1.5rem;
+    color: #777;
+    max-width: 50rem;
+    line-height: 2;
+  }
+
+.team {
+    background-color:#eee ;
+    margin-bottom: 5rem;
+  }
+  
+  .team .box-container {
+display: flex;   
+justify-content: center;
+  }
+  
+  .team .box-container .box {
+    border: 0.2rem solid #222;
+    text-align: center;
+    margin: 1rem;
+  }
+  
+  .team .box-container .box:hover .image img {
+    transform: scale(1.1);
+  }
+  
+  .team .box-container .box:hover .image .share {
+    display: flex;
+  }
+  
+  .team .box-container .box .image {
+    height: 50rem;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .team .box-container .box .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .team .box-container .box .image .share {
+    position: absolute;
+    top: 0;
+    background: #F08080;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+     justify-content: center;
+    padding: 0 1rem;
+    display: none;
+
+  }
+  
+  .team .box-container .box .image .share a {
+    height: 5rem;
+    width: 5rem;
+    border: 0.2rem solid #fff;
+    font-size: 2.5rem;
+    color: #fff;
+    line-height: 5rem;
+  }
+  
+  .team .box-container .box .image .share a:hover {
+    background: #fff;
+    color: #F08080;
+
+  }
+  
+  .team .box-container .box .content {
+    border-top: 0.2rem solid #222;
+    padding: 1.5rem;
+  }
+  
+  .team .box-container .box .content h3 {
+    font-size: 2rem;
+    color: #222;
+  }
+  
+  .team .box-container .box .content p {
+    font-size: 1.5rem;
+    color: #F08080;
+  }
+  
+
+
+
+
+.footer{
+    background: #f5f5f5;
+
+}
+.footer .box-container{
+display: flex;
+justify-content: space-between;
+
+}
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    color: #222;
+    padding:1rem 0;
+}
+.footer .box-container .box .link{
+    padding:1rem 0;
+    font-size: 1.4rem;
+    color: #666;
+    display:block;
+}
+.footer .box-container .box .link i{
+    padding-right: .5rem;
+    color: #F08080;
+}
+.footer .box-container .box .link:hover{
+    color: #F08080;
+}
+.footer .box-container .box .link:hover i{
+    padding-right: 2rem;
+}
+.footer .box-container .box .share{
+    margin-top: 2rem;
+}
+.footer .box-container .box .share a{
+    height:4.5rem;
+    width:4.5rem;
+    line-height: 4.5rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    background: #eee;
+    text-align: center;
+    color: #222;
+    margin-right: .5rem;
+}
+.footer .box-container .box .share a:hover{
+    color: #fff;
+    background: #F08080;
+}
+.footer .box-container .box p{
+    padding: 1rem 0;
+    font-size: 1.7rem;
+    color: #666;
+}
+.footer .box-container .box form .email{
+    border:0.2rem solid #222;
+    width: 100%;
+    padding:1.2rem 1.7rem;
+    color: #666;
+    margin: 1rem 0;
+    font-size: 1.6rem;
+}

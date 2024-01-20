@@ -1,0 +1,269 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+section {
+    padding: 3rem 9%;
+}
+
+span {
+    color: #F08080;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    color: #222;
+    font-size: 1.7rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+.btn:hover {
+    letter-spacing: .2rem;
+    background: #F08080;
+    color: #fff;
+}
+
+.header {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 9%;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    color: #222;
+    font-weight: bolder;
+}
+
+.header .logo i {
+    color: #F08080;
+}
+
+.header .navbar a {
+    margin: 0 1.5rem;
+    font-size: 1.7rem;
+    color: #222;
+}
+
+.header .navbar a:hover {
+    color: #F08080;
+}
+
+.header .icons a {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    font-size: 1.7rem;
+    color: #222;
+    margin-left: .3rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.header .icons a:hover {
+    background: #F08080;
+    color: #fff;
+}
+
+
+.message {
+    background: url("/static/img/horizontal-banner-cosmetic-products-with-almonds-cotton_23-2149446513.avif") no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    min-height: 500px;
+    margin-right: 0;
+    padding-bottom: 90px;
+}
+
+.content {
+    margin: 2rem auto;
+    background: #fff;
+    text-align: center;
+    max-width: 55rem;
+    max-height: 100rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+    padding: 2rem;
+    margin-top: 60px;
+    margin-left: 500px;
+
+}
+
+
+.content h1 {
+    text-align: left;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.hello h1 {
+    font-weight: bold;
+}
+
+.hello {
+    margin-top: 25px;
+    text-align: left;
+}
+
+.hello p {
+    font-size: 15px;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.order-box {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.order-box .p1 {
+    margin-right: 150px;
+    text-align: left;
+    color: rgb(134, 134, 134);
+    margin-bottom: 5px;
+}
+
+.order-box .p2{
+    margin-right: 30px;
+    text-align: right;
+    color: rgb(134, 134, 134);
+    margin-left: 26px;
+    margin-bottom: 5px;
+}
+
+
+.order-info-box {
+    margin-top: -8px;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.order-info-box p {
+    margin-right: 45px;
+    text-align: center;
+    color: black;
+    margin-left: 20px;
+    padding: 14px;
+}
+
+
+.content p {
+    font-size: 15px;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.hr1 {
+    margin-bottom: -20px;
+    padding-bottom: 0;
+    margin-top: 30px;
+}
+
+.hr2 {
+    margin-top: 2px;
+
+}
+
+
+
+.thanks{
+    margin-top: 30px;
+}
+
+.thanks h1{
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.footer {
+    background: #f5f5f5;
+
+}
+
+.footer .box-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.2rem;
+    color: #222;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .link {
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    color: #666;
+    display: block;
+}
+
+.footer .box-container .box .link i {
+    padding-right: .5rem;
+    color: #F08080;
+}
+
+.footer .box-container .box .link:hover {
+    color: #F08080;
+}
+
+.footer .box-container .box .link:hover i {
+    padding-right: 2rem;
+}
+
+.footer .box-container .box .share {
+    margin-top: 2rem;
+}
+
+.footer .box-container .box .share a {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    background: #eee;
+    text-align: center;
+    color: #222;
+    margin-right: .5rem;
+}
+
+.footer .box-container .box .share a:hover {
+    color: #fff;
+    background: #F08080;
+}
+
+.footer .box-container .box p {
+    padding: 1rem 0;
+    font-size: 1.7rem;
+    color: #666;
+}
+
+.footer .box-container .box form .email {
+    border: 0.2rem solid #222;
+    width: 100%;
+    padding: 1.2rem 1.7rem;
+    color: #666;
+    margin: 1rem 0;
+    font-size: 1.6rem;
+}

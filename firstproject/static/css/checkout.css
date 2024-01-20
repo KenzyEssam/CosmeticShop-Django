@@ -1,0 +1,306 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+
+section {
+    padding: 3rem 9%;
+}
+
+span {
+    color: #F08080;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    color: #222;
+    font-size: 1.7rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+.btn:hover {
+    letter-spacing: .2rem;
+    background: #F08080;
+    color: #fff;
+}
+
+.header {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 9%;
+}
+
+.header .navbar {
+    margin-left: 430px;
+    margin-top: 12px;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    color: #222;
+    font-weight: bolder;
+    position: absolute;
+    top: 20px;
+    text-decoration: none;
+
+}
+
+.header .logo i {
+    color: #F08080;
+}
+
+.header .navbar a {
+    margin: 0 1.5rem;
+    font-size: 1.7rem;
+    color: #222;
+    text-decoration: none;
+}
+
+.header .navbar a:hover {
+    color: #F08080;
+}
+
+.header .icons a {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    font-size: 1.7rem;
+    color: #222;
+    margin-left: .3rem;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.header .icons a:hover {
+    background: #F08080;
+    color: #fff;
+}
+
+.header .icons {
+    position: absolute;
+    top: 20px;
+    right: 130px;
+}
+
+
+.body-of-form {
+    background: url("/static/img/banner-bg.jpg") no-repeat;
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    width: 60%;
+    padding: 5% 15%;
+    background-color: #f6f3f3;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin-left: 600px;
+    width: 50%;
+    padding: 30px 10px;
+}
+
+input {
+    width: 100%;
+    min-height: 25px;
+    border: 0;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    font-family: "Arimo";
+    margin-top: 5px;
+    color: white;
+    background-color: white;
+    border-radius: 4px;
+    margin-top: 20px;
+    border: 1px solid black;
+
+}
+
+
+label {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    color: #F08080;
+
+}
+
+
+
+.name {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+}
+
+.name div {
+    width: 35%;
+}
+
+
+.cc-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+form h1 {
+    text-align: left;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    color: #e37676;
+    margin: 25px 0px;
+}
+
+
+
+
+
+
+
+
+.btns button {
+    margin: 3px 0;
+    height: 30px;
+    width: 40%;
+    background-color: #F08080;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: .5rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-items: center;
+    font-size: 20px;
+}
+
+
+.btns button {
+    margin-top: 30px;
+    color :white ; 
+    background-color: #F08080;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btns button a {
+    color: white;
+    text-decoration: none;
+}
+
+input[type="submit"] {
+    background-color: #F08080;
+    border: none;
+}
+
+
+
+
+
+
+.footer {
+    background: #f5f5f5;
+
+}
+
+.footer .box-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.2rem;
+    color: #222;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .link {
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    color: #666;
+    display: block;
+}
+
+.footer .box-container .box .link i {
+    padding-right: .5rem;
+    color: #F08080;
+}
+
+.footer .box-container .box .link:hover {
+    color: #F08080;
+}
+
+.footer .box-container .box .link:hover i {
+    padding-right: 2rem;
+}
+
+.footer .box-container .box .share {
+    margin-top: 2rem;
+}
+
+.footer .box-container .box .share a {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    background: #eee;
+    text-align: center;
+    color: #222;
+    margin-right: .5rem;
+}
+
+.footer .box-container .box .share a:hover {
+    color: #fff;
+    background: #F08080;
+}
+
+.footer .box-container .box p {
+    padding: 1rem 0;
+    font-size: 1.7rem;
+    color: #666;
+}
+
+.footer .box-container .box form .email {
+    border: 0.2rem solid #222;
+    width: 100%;
+    padding: 1.2rem 1.7rem;
+    color: #666;
+    margin: 1rem 0;
+    font-size: 1.6rem;
+}
