@@ -1,0 +1,144 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="{% static 'css/categories.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    {% block content %}
+
+
+    <section id="header" class="header">
+        <a href="#" class="logo"><i class="fas fa-female" style="font-size: 2.5rem;"></i> cosmetics</a>
+        <div class="navbar">
+            <a href="{%url 'home' %}">home</a>
+            <a href="{%url 'about' %}">about</a>
+            <a href="{%url 'categories' %}">shop</a>
+            <a href="{%url 'contact' %}">Contact us</a>
+            <a href="{%url 'blog' %}">Blogs</a>
+        </div>
+
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="{%url 'cart' %}" class="fas fa-shopping-cart"></a>
+            <a href = "{%url 'signup' %}"class="fa-sharp fa-solid fa-right-to-bracket"></a>
+
+        </div>
+    </section>
+
+
+
+  <section class="home" id="home">
+    {% for category_header in category_headers %}
+
+        <div class="slide" style="background:url('{{category_header.image}}') no-repeat">
+            <div class="content">
+                <span>{{category_header.title}}</span>
+                <h3 style="color: #f08080;">"Welcome to our cosmetics website, we are glad to have you <br>
+                    we are passionate about all things beauty and cosmetics.<br>
+                     Whether you're a makeup enthusiast or a professional artist" </h3>
+                <a href="#" class="btn" style="background-color: #f08080;">Start Shopping</a>
+            </div>
+        </div>
+        {% endfor %}
+
+    </section>
+
+
+
+
+
+
+
+    <section class="shop" id="shop">
+        <div class="text">
+            <h1 class="heading" style="color: black;">Featured <span style="font-size: 3.7rem;">Products</span></h1>
+        </div>
+        <div class="box-container">
+            {% for product in products %}
+            <div class="box">
+                
+                <div class="img">
+                    <a href="{% url 'productinfo' slug=product.slug %}" ><img src="{{product.image.url}}"></a>
+                    <div class="icons">
+                        <a href="{% url 'productinfo' slug=product.slug %}" class="fas fa-eye"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>{{product.name}}</h3>
+                    <div class="price">"{{product.current_price}}"  <span>"{{product.old_price}}"</span></div>
+                    <a href="cart.html" class="btn">add to cart</a>
+                </div>
+               
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+    
+    
+    
+
+
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Quick links</h3>
+                <a class="link" href="home.html"> <i class="fas fa-angle-right"></i> home</a>
+                <a class="link" href="about.html"> <i class="fas fa-angle-right"></i> about</a>
+                <a class="link" href=""> <i class="fas fa-angle-right"></i> shop</a>
+                <a class="link" href=""> <i class="fas fa-angle-right"></i> Contact us</a>
+                <a class="link" href=""> <i class="fas fa-angle-right"></i> Blogs</a>
+            </div>
+
+            <div class="box">
+                <h3>Extra links</h3>
+                <a class="link" href="#"> <i class="fas fa-angle-right"></i> my favorite </a>
+                <a class="link" href="#"> <i class="fas fa-angle-right"></i> my order </a>
+                <a class="link" href="#"> <i class="fas fa-angle-right"></i> my wishlist </a>
+                <a class="link" href="#"> <i class="fas fa-angle-right"></i> private policy </a>
+                <a class="link" href="#"> <i class="fas fa-angle-right"></i> terms of use </a>
+            </div>
+
+            <div class="box">
+                <h3>Contact info</h3>
+                <a class="link" href="#"> <i class="fas fa-phone"></i> +201124484296 </a>
+                <a class="link" href="#"> <i class="fas fa-phone"></i> +201102505246 </a>
+                <a class="link" href="#"> <i class="fas fa-envelope"></i> Kenzoessam@gmail.com </a>
+                <a class="link" href="#"> <i class="fas fa-map"></i> Egypt, Giza - Agouza </a>
+
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <h3>Newsletter</h3>
+                <p>Subscribe for latest updates</p>
+                <form action="">
+                    <input type="email" name="" placeholder="Enter your email" id="" class="email">
+                </form>
+                <input type="submit" value="Subscribe" class="btn">
+
+            </div>
+
+        </div>
+
+    </section>
+    {% endblock %}
+
+</body>
+
+</html>

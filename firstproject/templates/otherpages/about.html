@@ -1,0 +1,167 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+
+    <section id="header" class="header">
+        <a href="#" class="logo"><i class="fas fa-female" style="font-size: 2.5rem;"></i> cosmetics</a>
+        <div class="navbar">
+            <a href="{%url 'home' %}">home</a>
+            <a href="{%url 'about' %}">about</a>
+            <a href="{%url 'categories' %}">shop</a>
+            <a href="{%url 'contact' %}">Contact us</a>
+            <a href="{%url 'blog' %}">Blogs</a>
+        </div>
+
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="{%url 'cart' %}" class="fas fa-shopping-cart"></a>
+            <a href = "{%url 'signup' %}"class="fa-sharp fa-solid fa-right-to-bracket"></a>
+        </div>
+    </section>
+
+
+    {% for about_header in about_headers %}
+
+    <section class="about-header" id="about" style="background:url('{{about_header.image}}') no-repeat;">
+
+        <div class="content">
+            <span>{{about_header.title1}}</span>
+            <h3>{{about_header.title2}}</h3>
+            <p>{{about_header.body}}
+            </p>
+            <a href="#" class="btn">Read more</a>
+        </div>
+
+    </section>
+    {% endfor %}
+
+
+
+    <section class="about-us">
+        {% for about_us in about_uss %}
+
+        <div class="img">
+            <img src= "{{about_us.image.url}}" alt="">
+        </div>
+        <div class="content">
+            <div class="box">
+                <h3>{{about_us.title|safe}}</h3>
+                <p>{{about_us.body|linebreaksbr}} </p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+            {% endfor %}
+
+            <div class="icons-container">
+                {% for card in cards %}
+
+                <div class="icons">
+                    <i class="{{card.icon}}"></i>
+                    <p>{{card.title}}</p>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="team" id="team">
+
+        <div class="team-heading">
+            <h1>Our <span style="font-size: 3.5rem;">Team</span>
+            </h1>
+            <p>We have experts in all beauty fields that you will need. <br>Want to make a reservation?</p>
+        </div>
+
+        <div class="box-container">
+            {% block content %}
+            {% for team in teams %}
+        
+            <div class="box">
+                <div class="image">
+                    <img src= "{{team.image.url}}" alt="">
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>{{team.name}}</h3>
+                    <p>{{team.job}}</p>
+                </div>
+            </div>
+            {% endfor %}
+            {% endblock %}
+
+        </div>
+
+    </section>
+
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Quick links</h3>
+                <a class="link" href="home.html"> <i class="fas fa-angle-right"></i> home</a>
+                <a class="link" href="about.html"> <i class="fas fa-angle-right"></i> about</a>
+                <a class="link" href=""> <i class="fas fa-angle-right"></i> shop</a>
+                <a class="link" href=""> <i class="fas fa-angle-right"></i> Contact us</a>
+                <a class="link" href=""> <i class="fas fa-angle-right"></i> Blogs</a>
+            </div>
+
+            <div class="box">
+                <h3>Extra links</h3>
+                <a class="link" href="#"> <i class="fas fa-angle-right"></i> my favorite </a>
+                <a class="link" href="#"> <i class="fas fa-angle-right"></i> my order </a>
+                <a class="link" href="#"> <i class="fas fa-angle-right"></i> my wishlist </a>
+                <a class="link" href="#"> <i class="fas fa-angle-right"></i> private policy </a>
+                <a class="link" href="#"> <i class="fas fa-angle-right"></i> terms of use </a>
+            </div>
+
+            <div class="box">
+                <h3>Contact info</h3>
+                <a class="link" href="#"> <i class="fas fa-phone"></i> +201124484296 </a>
+                <a class="link" href="#"> <i class="fas fa-phone"></i> +201102505246 </a>
+                <a class="link" href="#"> <i class="fas fa-envelope"></i> Kenzoessam@gmail.com </a>
+                <a class="link" href="#"> <i class="fas fa-map"></i> Egypt, Giza - Agouza </a>
+
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <h3>Newsletter</h3>
+                <p>Subscribe for latest updates</p>
+                <form action="">
+                    <input type="email" name="" placeholder="Enter your email" id="" class="email">
+                </form>
+                <input type="submit" value="Subscribe" class="btn">
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,213 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="{%static 'css/cart.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <script src="{% static 'script/script.js' %}"></script>
+
+    <section id="header" class="header">
+        <a href="#" class="logo"><i class="fas fa-female" style="font-size: 2.5rem;"></i> cosmetics</a>
+        <div class="navbar">
+            <a href="{%url 'home' %}">home</a>
+            <a href="{%url 'about' %}">about</a>
+            <a href="{%url 'categories' %}">shop</a>
+            <a href="{%url 'contact' %}">Contact us</a>
+            <a href="{%url 'blog' %}">Blogs</a>
+        </div>
+
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="{%url 'cart' %}" class="fas fa-shopping-cart"></a>
+            <a href = "{%url 'signup' %}"class="fa-sharp fa-solid fa-right-to-bracket"></a>
+        </div>
+    </section>
+
+
+    
+    <div class="shopping-cart">
+
+        <div class="title">
+            Shopping Cart
+        </div>
+
+
+        <div class="item">
+            
+            <div class="buttons">
+                <a class="delete-btn"><i class="fa-solid fa-x "></i></a>
+                <a class="like-btn" id="myIcon" onclick="myFunction(this)"><i class="fa-solid fa-heart" ></i></a>
+            </div>
+
+            <div class="image">
+                <img src={%static 'img/71DznjTdfeL._SX466_.jpg' %} alt="" />
+            </div>
+
+            <div class="description">
+                <span>Maybelline New</span>
+                <span>Lifter gloss</span>
+                <span>petal 201</span>
+            </div>
+
+            <div class="numbers">
+                <select>
+                    <option value='one'>1</option>
+                    <option value='two'>2</option>
+                    <option value='three' selected>3</option>
+                    <option value='three'>4</option>
+                    <option value='three'>5</option>
+                    <option value='three'>6</option>
+                    <option value='three'>7</option>
+                    <option value='three'>8</option>
+                    <option value='three'>9</option>
+
+
+                </select>
+            </div>
+
+            <div class="total-price">$549</div>
+        </div>
+
+
+        <div class="item">
+
+
+            <div class="buttons">
+                <a class="delete-btn"><i class="fa-solid fa-x "></i></a>
+                <a class="like-btn" id="myIcon" onclick="myFunction(this)"><i class="fa-solid fa-heart" ></i></a>
+            </div>
+
+            <div class="image">
+                <img src="{%static 'img/81jl0NCW0NL._SX466_.jpg' %}" alt="" />
+            </div>
+
+            <div class="description">
+                <span>Garnier Moisture</span>
+                <span>Sheet Mask</span>
+                <span>Green Tea</span>
+            </div>
+
+            <div class="numbers">
+                <select>
+                    <option value='one'>1</option>
+                    <option value='two'>2</option>
+                    <option value='three'>3</option>
+                    <option value='three'>4</option>
+                    <option value='three'>5</option>
+                    <option value='three'>6</option>
+                    <option value='three'>7</option>
+                    <option value='three'>8</option>
+                    <option value='three'>9</option>
+
+
+                </select>
+            </div>
+
+
+
+            <div class="total-price">$870</div>
+        </div>
+
+
+        <div class="item">
+         
+            <div class="buttons">
+                <a class="delete-btn"><i class="fa-solid fa-x "></i></a>
+                <a class="like-btn" id="myIcon" onclick="myFunction(this)"><i class="fa-solid fa-heart" ></i></a>
+            </div>
+
+            <div class="image">
+                <img src= {%static 'img/81ytScjzBvL._SX466_.jpg'%}/>
+            </div>
+
+            <div class="description">
+                <span>Lo'real infallible</span>
+                <span>Face Powder</span>
+                <span>light biege</span>
+            </div>
+
+            <div class="numbers">
+                <select>
+                    <option value='one'>1</option>
+                    <option value='two' selected>2</option>
+                    <option value='three'>3</option>
+                    <option value='three'>4</option>
+                    <option value='three'>5</option>
+                    <option value='three'>6</option>
+                    <option value='three'>7</option>
+                    <option value='three'>8</option>
+                    <option value='three'>9</option>
+
+
+                </select>
+            </div>
+
+            <div class="total-price">$349</div>
+        </div>
+
+        <button class="addtocart">
+            <a class="cart-button" href="{%url 'checkout' %}"> Check Out</a> 
+     </button>
+
+    </div>
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Quick links</h3>
+                <a class="link" href="home.html"> <i class="fas fa-angle-right"></i> home</a>
+                <a class="link" href="about.html"> <i class="fas fa-angle-right"></i> about</a>
+                <a class="link" href=""> <i class="fas fa-angle-right"></i> shop</a>
+                <a class="link" href=""> <i class="fas fa-angle-right"></i> Contact us</a>
+                <a class="link" href=""> <i class="fas fa-angle-right"></i> Blogs</a>
+            </div>
+
+            <div class="box">
+                <h3>Extra links</h3>
+                <a class="link" href="#"> <i class="fas fa-angle-right"></i> my favorite </a>
+                <a class="link" href="#"> <i class="fas fa-angle-right"></i> my order </a>
+                <a class="link" href="#"> <i class="fas fa-angle-right"></i> my wishlist </a>
+                <a class="link" href="#"> <i class="fas fa-angle-right"></i> private policy </a>
+                <a class="link" href="#"> <i class="fas fa-angle-right"></i> terms of use </a>
+            </div>
+
+            <div class="box">
+                <h3>Contact info</h3>
+                <a class="link" href="#"> <i class="fas fa-phone"></i> +201124484296 </a>
+                <a class="link" href="#"> <i class="fas fa-phone"></i> +201102505246 </a>
+                <a class="link" href="#"> <i class="fas fa-envelope"></i> Kenzoessam@gmail.com </a>
+                <a class="link" href="#"> <i class="fas fa-map"></i> Egypt, Giza - Agouza </a>
+
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <h3>Newsletter</h3>
+                <p>Subscribe for latest updates</p>
+                <form action="">
+                    <input type="email" name="" placeholder="Enter your email" id="" class="email">
+                </form>
+                <input type="submit" value="Subscribe" class="btn">
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>

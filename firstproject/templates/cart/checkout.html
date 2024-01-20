@@ -1,0 +1,118 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="{%static 'css/checkout.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+    <section id="header" class="header">
+        <a href="#" class="logo"><i class="fas fa-female" style="font-size: 2.5rem;"></i> cosmetics</a>
+        <div class="navbar">
+            <a href="{%url 'home' %}">home</a>
+            <a href="{%url 'about' %}">about</a>
+            <a href="{%url 'categories' %}">shop</a>
+            <a href="{%url 'contact' %}">Contact us</a>
+            <a href="{%url 'blog' %}">Blogs</a>
+        </div>
+
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="{%url 'cart' %}" class="fas fa-shopping-cart"></a>
+            <a href = "{%url 'signup' %}"class="fa-sharp fa-solid fa-right-to-bracket"></a>
+
+        </div>
+    </section>
+
+
+
+    <section class="body-of-form">
+        <div class="wrapper">
+            <div class="container">
+                <form action="" method="post">
+                    <h1>
+                        <i class="far fa-credit-card"></i>
+                         Shipping Details :
+                    </h1>
+                          
+ 
+                    {% block Content%}
+                    {% csrf_token %}
+                    {{ form.as_p }}
+
+                   
+
+
+                    <div class="btns">
+                    <button><input type="submit" value="Purchase"></button>
+
+                    </div>
+                    {% endblock %}
+
+                </form>
+            </div>
+        </div>
+
+    </section>
+    
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Quick links</h3>
+                <a class="link" href="home.html"> <i class="fas fa-angle-right"></i> home</a>
+                <a class="link" href="about.html"> <i class="fas fa-angle-right"></i> about</a>
+                <a class="link" href=""> <i class="fas fa-angle-right"></i> shop</a>
+                <a class="link" href=""> <i class="fas fa-angle-right"></i> Contact us</a>
+                <a class="link" href=""> <i class="fas fa-angle-right"></i> Blogs</a>
+            </div>
+
+            <div class="box">
+                <h3>Extra links</h3>
+                <a class="link" href="#"> <i class="fas fa-angle-right"></i> my favorite </a>
+                <a class="link" href="#"> <i class="fas fa-angle-right"></i> my order </a>
+                <a class="link" href="#"> <i class="fas fa-angle-right"></i> my wishlist </a>
+                <a class="link" href="#"> <i class="fas fa-angle-right"></i> private policy </a>
+                <a class="link" href="#"> <i class="fas fa-angle-right"></i> terms of use </a>
+            </div>
+
+            <div class="box">
+                <h3>Contact info</h3>
+                <a class="link" href="#"> <i class="fas fa-phone"></i> +201124484296 </a>
+                <a class="link" href="#"> <i class="fas fa-phone"></i> +201102505246 </a>
+                <a class="link" href="#"> <i class="fas fa-envelope"></i> Kenzoessam@gmail.com </a>
+                <a class="link" href="#"> <i class="fas fa-map"></i> Egypt, Giza - Agouza </a>
+
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <h3>Newsletter</h3>
+                <p>Subscribe for latest updates</p>
+                <form action="">
+                    <input type="email" name="" placeholder="Enter your email" id="" class="email">
+                </form>
+                <input type="submit" value="Subscribe" class="btn">
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
